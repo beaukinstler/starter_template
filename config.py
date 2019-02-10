@@ -13,7 +13,7 @@ class Config(object):
     APP_NAME = os.environ.get('APP_NAME') or 'Generic App -- change this in config.py'
     APP_NAME_SNAKE = re.sub("[ ]", "_", APP_NAME).lower() 
     SUPER_SECRET_KEY = os.environ.get('SUPER_SECRET_KEY') # for Google API
-    SUPER_SECRET_KEY = os.environ.get('SECRET_KEY') # flask
+    SECRET_KEY = os.environ.get('SECRET_KEY') # flask
     ADMIN_EMAIL = os.environ.get('ADMIN_EMAIL')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
